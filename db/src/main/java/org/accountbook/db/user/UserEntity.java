@@ -7,7 +7,6 @@ import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
 import org.accountbook.db.BaseTimeEntity;
 import org.accountbook.db.profile.ProfileEntity;
-import org.accountbook.db.user.enums.GenderType;
 
 @Entity
 @Table(name = "users")
