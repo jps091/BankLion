@@ -6,6 +6,7 @@ import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
 import org.accountbook.db.BaseTimeEntity;
+import org.accountbook.db.user.enums.GenderType;
 
 import java.time.LocalDate;
 
@@ -23,6 +24,10 @@ public class ProfileEntity extends BaseTimeEntity {
 
     @Column(length = 50, nullable = false)
     private String name;
+
+    @Enumerated(EnumType.STRING)
+    @Column(nullable = false)
+    private GenderType genderType;
 
     @Column(columnDefinition = "DATE", nullable = false)
     private LocalDate birthDate;
