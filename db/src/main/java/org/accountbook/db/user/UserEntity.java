@@ -31,8 +31,6 @@ public class UserEntity extends BaseTimeEntity {
     @Column(length = 100, nullable = false)
     private String password;
 
-    @Enumerated(EnumType.STRING)
     @Column(nullable = false)
-    private GenderType genderType;
-
+    private String phoneNumber; //TODO 패턴 검증필요
 }
