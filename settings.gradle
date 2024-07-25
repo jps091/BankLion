@@ -1,0 +1,4 @@
+rootProject.name = 'accountbook'
+include 'view'
+include 'db'
+
